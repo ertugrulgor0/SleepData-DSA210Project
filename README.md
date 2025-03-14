@@ -34,26 +34,28 @@ There is no significant relationship between daily habits (physical activity, nu
 **Alternative Hypothesis (H₁):**  
 There is a significant relationship between daily habits and sleep quality. Variations in physical activity, nutrition, caffeine intake, and screen time have a measurable impact on sleep duration and quality.
 
----
-
 ## Dataset
-The dataset for this project consists of at least one month of daily records. Here’s what I’ll be tracking:
+- **Date** – The specific day of the record  
+- **Physical Activity**  
+  - Exercise Duration(walking, fitness) (minutes)    
+- **Nutrition**  
+  - Carbohydrates (g)  
+  - Sugar (g)  
+  - Meat Consumption (g)  
+- **Caffeine Intake**  
+  - Total caffeine intake (mg)  
+- **Screen Time**  
+  - Computer Usage (minutes)  
+  - Phone Usage (minutes)  
+- **Sleep Data** (from **Sleep Monitor** app)  
+  - Total Sleep Duration (hours)  
+  - Deep Sleep Duration (hours)  
+  - Sleep Efficiency (%)  
+  - Number of Awakenings  
+- **Self-Assessed Metrics**  
+  - Day Difficulty (1-10)  
 
-- **Date**: The specific day of the record
-- **Exercise Duration (min)**: Total time spent exercising
-- **Body Weight (kg)**: Daily body weight measurement
-- **Commuting Time (min)**: Time spent walking or traveling
-- **Carbohydrates (g)**: Daily carb intake
-- **Sugar (g)**: Total sugar consumption
-- **Protein (g)**: Amount of protein consumed
-- **Caffeine Intake (mg)**: Total caffeine consumed
-- **Computer Usage (min)**: Time spent on a computer
-- **Phone Usage (min)**: Time spent on a phone
-- **Sleep Onset Time**: Time taken to fall asleep
-- **Sleep Duration (hrs)**: Total sleep duration
-- **Sleep Quality (1-10)**: Self-rated sleep quality
-
-I’ll log all data daily using **Google Sheets or Notion**, ensuring consistency and accuracy. Any outliers due to illness, injuries, or major routine changes will be flagged for review.
+Data will be logged daily in an Excel sheet and preprocessed for analysis. Outliers due to illness, unusual schedules, or other disruptions will be flagged for review.  
 
 ---
 
@@ -72,23 +74,23 @@ To dig deep into my data, I’ll be using:
 
 ## **Analysis Plan** 
 
-### Data Collection  
+## Data Collection  
 - Import daily Excel records into a Pandas DataFrame and preprocess the data by handling missing values and standardizing units.
   
-### Visualization  
+## Visualization  
 - Use scatter plots, heatmaps, and time series plots to explore relationships between variables.  
 - Examples include:  
   - Scatter plot of protein intake vs. Bench Press performance  
   - Heatmap showing correlations between all variables  
   - Time series plot comparing performance trends over three months  
 
-### Hypothesis Testing  
+## Hypothesis Testing  
 - Test hypotheses like:  
   - **H₀:** Daily habits have no effect on Bench Press performance.  
   - **Hₐ:** One or more daily variables significantly impact Bench Press performance.  
 - Run regression analysis to identify the strongest predictors of progress.  
 
-### Trend Analysis  
+## Trend Analysis  
 - Investigate patterns in performance over time, identifying peaks or plateaus.  
 - Analyze how body weight fluctuations and day-to-day difficulty ratings correlate with performance trends.    
 
