@@ -8,11 +8,15 @@ The goal? To move beyond guesswork, identify patterns backed by data, and optimi
 ---
 
 ## **Objectives**  
-1. **Figure Out What Affects My Sleep the Most** – Is it caffeine? Too much screen time? A late-night workout? Let’s find out!  
-2. **Uncover the Link Between Exercise and Sleep** – Does working out more help me sleep better, or does it keep me wired?  
-3. **See How Food Choices Impact Rest** – Are late-night carbs messing with my sleep? Or does cutting sugar actually help?  
-4. **Investigate the Tech Factor** – Is my phone keeping me up at night, or am I just blaming it for my bad habits?  
-5. **Use Data to Build the Perfect Nighttime Routine** – No more guessing! I’ll use real insights to optimize my habits and get the best sleep possible.  
+1. **Understand the Key Factors Affecting Sleep** – Identify which daily habits (physical activity, nutrition, caffeine intake, and screen time) have the most significant impact on sleep quality and duration.
+     
+2. **Analyze the Relationship Between Physical Activity and Sleep** – Examine whether exercise and commuting patterns contribute to better or worse sleep outcomes.
+   
+3. **Evaluate the Role of Nutrition** – Investigate how carbohydrate, sugar, and meat consumption influence sleep patterns, including onset time and restfulness.
+    
+4. **Assess the Effects of Technology Use** – Determine whether extended screen time, particularly before bedtime, disrupts sleep quality and duration.
+   
+5. **Use Data to Make Informed Adjustments** – Based on insights from the analysis, identify potential lifestyle changes that could improve sleep efficiency.
 
 ---
 
@@ -56,25 +60,41 @@ I’ll log all data daily using **Google Sheets or Notion**, ensuring consistenc
 ## **Tools and Technologies**  
 To dig deep into my data, I’ll be using:  
 
-- **Python** – The magic wand for data science!  
-- **Pandas** – Cleaning and organizing my messy data.  
-- **Matplotlib & Seaborn** – Making beautiful charts to actually see what’s going on.  
+- **Python** – The magic wand for data science!
+  
+- **Pandas** – Cleaning and organizing my messy data.
+
+- **Matplotlib & Seaborn** – Making beautiful charts to actually see what’s going on.
+  
 - **SciPy & Statsmodels** – Running stats tests to separate facts from coincidences.   
 
 ---
 
-### **Analysis Plan**  
-Here’s how I’m going to break it down:  
+## **Analysis Plan** 
 
-1. **Collect & Clean Data** – Every day, I’ll log my habits and make sure everything is recorded properly.  
-2. **Explore My Data** – I’ll start with some **scatter plots, histograms, and heatmaps** to spot trends.  
-3. **Run Statistical Tests** – I’ll use **T-tests, ANOVA, and regression models** to see which factors have the biggest impact on my sleep.  
-4. **Train a Prediction Model (Maybe!)** – If I have enough data, I’ll build a simple **machine learning model** to predict my sleep quality based on my habits.  
-5. **Find the Key Insights & Make Adjustments** – I’ll take everything I learn and tweak my daily routine to improve my sleep!  
+### Data Collection  
+- Import daily Excel records into a Pandas DataFrame and preprocess the data by handling missing values and standardizing units.
+  
+### Visualization  
+- Use scatter plots, heatmaps, and time series plots to explore relationships between variables.  
+- Examples include:  
+  - Scatter plot of protein intake vs. Bench Press performance  
+  - Heatmap showing correlations between all variables  
+  - Time series plot comparing performance trends over three months  
+
+### Hypothesis Testing  
+- Test hypotheses like:  
+  - **H₀:** Daily habits have no effect on Bench Press performance.  
+  - **Hₐ:** One or more daily variables significantly impact Bench Press performance.  
+- Run regression analysis to identify the strongest predictors of progress.  
+
+### Trend Analysis  
+- Investigate patterns in performance over time, identifying peaks or plateaus.  
+- Analyze how body weight fluctuations and day-to-day difficulty ratings correlate with performance trends.    
 
 ---
 
-### **Conclusion**  
+## **Conclusion**  
 By the end of this project, I’ll have **real data-backed answers** about my sleep. I’ll know exactly what **helps** me get better rest and what **hurts** it. No more random guessing—just **clear, data-driven strategies** for waking up feeling refreshed and ready to go!  
 
 This isn’t just about sleep—it’s about **understanding how my daily choices impact my life** and using data to make smarter, healthier decisions. 
